@@ -1,4 +1,4 @@
-name: X86_64 Lean_full Lede
+name: r7800 Lean Lede
 
 on:
   workflow_dispatch:
@@ -8,13 +8,13 @@ on:
 env:
   REPO_URL: https://github.com/huanghitoy/lede
   REPO_BRANCH: master
-  CONFIG_FILE: configs/x86_64_Lean_full.config
+  CONFIG_FILE: configs/r7800_Lean.config
   DIY_SCRIPT: x86_64-Lean.sh
-  CLASH_KERNEL: amd64
-  CACHE_TOOLCHAIN: true
+  CLASH_KERNEL: arm
+  CACHE_TOOLCHAIN: false
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: X86_64
+  FIRMWARE_TAG: ipq806x
   TZ: Asia/Shanghai
 
 jobs:
